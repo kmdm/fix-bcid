@@ -1,0 +1,35 @@
+fix-bcid
+--------
+
+If you have no cause to use this then, simply, don't.
+
+DISCLAIMER
+----------
+
+You use this utility at entirely your own risk, I am not responsible for any 
+direct or indirect damage to your phone as a result of your usage of this 
+utility. Your acceptance of this term is implied when you run the utility.
+
+Usage
+-----
+
+When unrevoked fails stating a Validation error due to a missing backup cid, 
+this is when you can use this utility.
+
+$ adb shell
+$ adb push fix-bcid /data/local
+$ /system/__unrevoked_su
+# /data/local/fix-bcid
+
+If the utility finishes successfully then you may re-run unrevoked which should
+now be able to work its magic. 
+
+If you encounter an error, try the manual method (linked below) or ask for help
+at irc.freenode.net/#unrevokedtext
+
+Original guide (Manual method)
+------------------------------
+
+http://www.kennynet.co.uk/misc/bcid-fix.txt
+
+- Kenny Millington (irc.freenode.net/kmdm)
