@@ -19,6 +19,7 @@ this is when you can use this utility.
 $ adb shell
 $ adb push fix-bcid /data/local
 $ /system/__unrevoked_su
+# chmod 755 /data/local/fix-bcid
 # /data/local/fix-bcid
 
 If the utility finishes successfully then you may re-run unrevoked which should
